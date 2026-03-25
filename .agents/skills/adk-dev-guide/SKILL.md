@@ -41,6 +41,7 @@ Before writing any code:
 2. Identify the core capabilities required
 3. Note any constraints or things the agent should NOT do
 4. Understand success criteria for evaluation
+5. **MANDATORY**: Create an `implementation_plan.md` and include a **"Project Constraints"** section that explicitly lists the target deployment region, model location, and required SDK parameters (e.g., `user_id`).
 
 ## Phase 2: Build and Implement
 

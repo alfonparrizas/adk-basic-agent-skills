@@ -278,9 +278,11 @@ import vertexai
 with open("deployment_metadata.json") as f:
     engine_id = json.load(f)["remote_agent_engine_id"]
 
+# Use the project standard location (e.g., us-central1 or europe-west1)
 client = vertexai.Client(location="us-central1")
 agent = client.agent_engines.get(name=engine_id)
 
+# IMPORTANT: ADK-based agents require a user_id parameter in query methods
 async for event in agent.async_stream_query(message="Hello!", user_id="test"):
     print(event)
 ```

@@ -17,6 +17,9 @@ Follow these steps to deploy your agent to Google Cloud Vertex AI Agent Engine.
     gcloud config set project [PROJECT_ID]
     ```
 
+3.  **Verify Deployment Region**:
+    Ensure the target region matches the project standard (e.g., `europe-west1`) before proceeding.
+
 3.  **Prepare the deployment configuration**:
     Ensure you have an `agent_config.yaml` file in your project root.
 
